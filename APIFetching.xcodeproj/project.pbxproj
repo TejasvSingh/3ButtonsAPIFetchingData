@@ -24,28 +24,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A9ABC2A12F3F727C001E98E0 /* ButtonFetchingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonFetchingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9ABC2B72F3F727D001E98E0 /* ButtonFetchingDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonFetchingDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9ABC2C12F3F727D001E98E0 /* ButtonFetchingDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonFetchingDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9ABC2A12F3F727C001E98E0 /* APIFetching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIFetching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9ABC2B72F3F727D001E98E0 /* APIFetchingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIFetchingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9ABC2C12F3F727D001E98E0 /* APIFetchingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIFetchingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A9ABC2C92F3F727D001E98E0 /* Exceptions for "ButtonFetchingData" folder in "ButtonFetchingData" target */ = {
+		A9ABC3482F3F81F4001E98E0 /* Exceptions for "APIFetchingData" folder in "APIFetching" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = A9ABC2A02F3F727C001E98E0 /* ButtonFetchingData */;
+			target = A9ABC2A02F3F727C001E98E0 /* APIFetching */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A9ABC2A32F3F727C001E98E0 /* ButtonFetchingData */ = {
+		A9ABC2A32F3F727C001E98E0 /* APIFetchingData */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A9ABC2C92F3F727D001E98E0 /* Exceptions for "ButtonFetchingData" folder in "ButtonFetchingData" target */,
+				A9ABC3482F3F81F4001E98E0 /* Exceptions for "APIFetchingData" folder in "APIFetching" target */,
 			);
-			path = ButtonFetchingData;
+			path = APIFetchingData;
 			sourceTree = "<group>";
 		};
 		A9ABC2BA2F3F727D001E98E0 /* ButtonFetchingDataTests */ = {
@@ -88,7 +88,7 @@
 		A9ABC2982F3F727C001E98E0 = {
 			isa = PBXGroup;
 			children = (
-				A9ABC2A32F3F727C001E98E0 /* ButtonFetchingData */,
+				A9ABC2A32F3F727C001E98E0 /* APIFetchingData */,
 				A9ABC2BA2F3F727D001E98E0 /* ButtonFetchingDataTests */,
 				A9ABC2C42F3F727D001E98E0 /* ButtonFetchingDataUITests */,
 				A9ABC2A22F3F727C001E98E0 /* Products */,
@@ -98,9 +98,9 @@
 		A9ABC2A22F3F727C001E98E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9ABC2A12F3F727C001E98E0 /* ButtonFetchingData.app */,
-				A9ABC2B72F3F727D001E98E0 /* ButtonFetchingDataTests.xctest */,
-				A9ABC2C12F3F727D001E98E0 /* ButtonFetchingDataUITests.xctest */,
+				A9ABC2A12F3F727C001E98E0 /* APIFetching.app */,
+				A9ABC2B72F3F727D001E98E0 /* APIFetchingTests.xctest */,
+				A9ABC2C12F3F727D001E98E0 /* APIFetchingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9ABC2A02F3F727C001E98E0 /* ButtonFetchingData */ = {
+		A9ABC2A02F3F727C001E98E0 /* APIFetching */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9ABC2CA2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "ButtonFetchingData" */;
+			buildConfigurationList = A9ABC2CA2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "APIFetching" */;
 			buildPhases = (
 				A9ABC29D2F3F727C001E98E0 /* Sources */,
 				A9ABC29E2F3F727C001E98E0 /* Frameworks */,
@@ -121,18 +121,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A9ABC2A32F3F727C001E98E0 /* ButtonFetchingData */,
+				A9ABC2A32F3F727C001E98E0 /* APIFetchingData */,
 			);
-			name = ButtonFetchingData;
+			name = APIFetching;
 			packageProductDependencies = (
 			);
 			productName = ButtonFetchingData;
-			productReference = A9ABC2A12F3F727C001E98E0 /* ButtonFetchingData.app */;
+			productReference = A9ABC2A12F3F727C001E98E0 /* APIFetching.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9ABC2B62F3F727D001E98E0 /* ButtonFetchingDataTests */ = {
+		A9ABC2B62F3F727D001E98E0 /* APIFetchingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9ABC2CF2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "ButtonFetchingDataTests" */;
+			buildConfigurationList = A9ABC2CF2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "APIFetchingTests" */;
 			buildPhases = (
 				A9ABC2B32F3F727D001E98E0 /* Sources */,
 				A9ABC2B42F3F727D001E98E0 /* Frameworks */,
@@ -146,16 +146,16 @@
 			fileSystemSynchronizedGroups = (
 				A9ABC2BA2F3F727D001E98E0 /* ButtonFetchingDataTests */,
 			);
-			name = ButtonFetchingDataTests;
+			name = APIFetchingTests;
 			packageProductDependencies = (
 			);
 			productName = ButtonFetchingDataTests;
-			productReference = A9ABC2B72F3F727D001E98E0 /* ButtonFetchingDataTests.xctest */;
+			productReference = A9ABC2B72F3F727D001E98E0 /* APIFetchingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A9ABC2C02F3F727D001E98E0 /* ButtonFetchingDataUITests */ = {
+		A9ABC2C02F3F727D001E98E0 /* APIFetchingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9ABC2D22F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "ButtonFetchingDataUITests" */;
+			buildConfigurationList = A9ABC2D22F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "APIFetchingUITests" */;
 			buildPhases = (
 				A9ABC2BD2F3F727D001E98E0 /* Sources */,
 				A9ABC2BE2F3F727D001E98E0 /* Frameworks */,
@@ -169,11 +169,11 @@
 			fileSystemSynchronizedGroups = (
 				A9ABC2C42F3F727D001E98E0 /* ButtonFetchingDataUITests */,
 			);
-			name = ButtonFetchingDataUITests;
+			name = APIFetchingUITests;
 			packageProductDependencies = (
 			);
 			productName = ButtonFetchingDataUITests;
-			productReference = A9ABC2C12F3F727D001E98E0 /* ButtonFetchingDataUITests.xctest */;
+			productReference = A9ABC2C12F3F727D001E98E0 /* APIFetchingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9ABC29C2F3F727C001E98E0 /* Build configuration list for PBXProject "ButtonFetchingData" */;
+			buildConfigurationList = A9ABC29C2F3F727C001E98E0 /* Build configuration list for PBXProject "APIFetching" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -213,9 +213,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9ABC2A02F3F727C001E98E0 /* ButtonFetchingData */,
-				A9ABC2B62F3F727D001E98E0 /* ButtonFetchingDataTests */,
-				A9ABC2C02F3F727D001E98E0 /* ButtonFetchingDataUITests */,
+				A9ABC2A02F3F727C001E98E0 /* APIFetching */,
+				A9ABC2B62F3F727D001E98E0 /* APIFetchingTests */,
+				A9ABC2C02F3F727D001E98E0 /* APIFetchingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,12 +271,12 @@
 /* Begin PBXTargetDependency section */
 		A9ABC2B92F3F727D001E98E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9ABC2A02F3F727C001E98E0 /* ButtonFetchingData */;
+			target = A9ABC2A02F3F727C001E98E0 /* APIFetching */;
 			targetProxy = A9ABC2B82F3F727D001E98E0 /* PBXContainerItemProxy */;
 		};
 		A9ABC2C32F3F727D001E98E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9ABC2A02F3F727C001E98E0 /* ButtonFetchingData */;
+			target = A9ABC2A02F3F727C001E98E0 /* APIFetching */;
 			targetProxy = A9ABC2C22F3F727D001E98E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -290,10 +290,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ButtonFetchingData/Info.plist;
+				INFOPLIST_FILE = APIFetchingData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,10 +320,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ButtonFetchingData/Info.plist;
+				INFOPLIST_FILE = APIFetchingData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +478,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonFetchingData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButtonFetchingData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APIFetching.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/APIFetching";
 			};
 			name = Debug;
 		};
@@ -501,7 +499,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonFetchingData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ButtonFetchingData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APIFetching.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/APIFetching";
 			};
 			name = Release;
 		};
@@ -546,7 +544,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9ABC29C2F3F727C001E98E0 /* Build configuration list for PBXProject "ButtonFetchingData" */ = {
+		A9ABC29C2F3F727C001E98E0 /* Build configuration list for PBXProject "APIFetching" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9ABC2CD2F3F727D001E98E0 /* Debug */,
@@ -555,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9ABC2CA2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "ButtonFetchingData" */ = {
+		A9ABC2CA2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "APIFetching" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9ABC2CB2F3F727D001E98E0 /* Debug */,
@@ -564,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9ABC2CF2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "ButtonFetchingDataTests" */ = {
+		A9ABC2CF2F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "APIFetchingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9ABC2D02F3F727D001E98E0 /* Debug */,
@@ -573,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9ABC2D22F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "ButtonFetchingDataUITests" */ = {
+		A9ABC2D22F3F727D001E98E0 /* Build configuration list for PBXNativeTarget "APIFetchingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9ABC2D32F3F727D001E98E0 /* Debug */,
