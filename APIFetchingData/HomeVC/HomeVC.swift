@@ -11,7 +11,7 @@ class ButtonsVC: UIViewController {
     // MARK: - UI Components
     let usersButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Users screen", for: .normal)
+        button.setTitle("Users", for: .normal)
         button.frame = CGRect(x: 100, y: 200, width: 200, height: 50)
         button.layer.cornerRadius = 12
         button.backgroundColor = .black
@@ -21,7 +21,7 @@ class ButtonsVC: UIViewController {
     
     let cryptoButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Crypto screen", for: .normal)
+        button.setTitle("Crypto", for: .normal)
         button.frame = CGRect(x: 100, y: 400, width: 200, height: 50)
         button.layer.cornerRadius = 12
         button.backgroundColor = .black
@@ -31,7 +31,7 @@ class ButtonsVC: UIViewController {
     
     let peopleButton: UIButton = {
         let button = UIButton()
-        button.setTitle("People screen", for: .normal)
+        button.setTitle("People", for: .normal)
         button.frame = CGRect(x: 100, y: 600, width: 200, height: 50)
         button.layer.cornerRadius = 12
         button.backgroundColor = .black
