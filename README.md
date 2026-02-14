@@ -1,6 +1,7 @@
 ButtonFetchingData iOS App
 
 
+
 Overview
 ButtonFetchingData is an iOS app built in Swift using UIKit, demonstrating data fetching from APIs and displaying it in a structured way across multiple screens. The app uses the MVVM (Model-View-ViewModel) architecture and asynchronous networking to fetch users, cryptocurrency data, and people data.
 The app consists of three main screens accessible via buttons:
@@ -84,4 +85,16 @@ Notes
 * The app currently prints debug messages for data fetching (print("checking this message")).
 * TableView cells use auto layout and dynamic row heights.
 * Labels are styled with system fonts and colors.
+
 * Each ViewModel can be easily tested independently using a mock service.
+
+
+SCREENS:
+
+<img width="120" height="262" alt="simulator_screenshot_974FEA51-879E-47CE-93B7-F11D3E222030" src="https://github.com/user-attachments/assets/bad47192-abee-4f6b-87c2-4b2022d454e6" />
+
+<img width="120" height="262" alt="simulator_screenshot_FE2768A4-2AF9-46BE-AE90-497E1A56FC42" src="https://github.com/user-attachments/assets/44def792-af72-4878-b2ac-18ca984b67e9" />
+
+<img width="120" height="262" alt="simulator_screenshot_676836BE-4C22-400D-8FF9-86EA6F5B217E" src="https://github.com/user-attachments/assets/9212ec34-d832-4f45-a620-10e4ef9be9bc" />
+
+<img width="120" height="262" alt="simulator_screenshot_71962A86-5C64-410C-BE62-43438EC4F1A6" src="https://github.com/user-attachments/assets/1bdbd75b-a949-4f69-9422-fa4a99f6b463" />
