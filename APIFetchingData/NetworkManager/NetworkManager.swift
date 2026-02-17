@@ -49,7 +49,7 @@ class UsersNetworkManager: UsersNetworkManagerProtocol {
             let (data, response) = try await URLSession.shared.data(from: serverURL)
             
             if let serverResponse = response as? HTTPURLResponse, serverResponse.statusCode != 200 {
-                print("Log: No data received from server")
+                print("Log: No data received from server 9 \(serverResponse)")
                 return nil
             }
             

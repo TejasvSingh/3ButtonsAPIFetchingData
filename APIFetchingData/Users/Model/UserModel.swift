@@ -10,5 +10,12 @@ struct Users: Decodable {
     let id: Int?
     let title: String?
     let body: String?
+    
+    enum CodingKeys: String, CodingKey{
+        case userId = "userId"
+        case id = "id"
+        case title = "title"
+        case body = "body"
+    }
 }
 

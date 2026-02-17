@@ -8,6 +8,12 @@ import UIKit
 
 class CryptoVC: UIViewController {
     // MARK: - UI Components
+    let toggleSwitch : UISwitch = {
+        let toggleSwitch = UISwitch()
+        toggleSwitch.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
+        toggleSwitch.translatesAutoresizingMaskIntoConstraints = false
+        return toggleSwitch
+    }()
     
     var bitcoinLabel: UILabel = {
         let label = UILabel()
@@ -30,7 +36,7 @@ class CryptoVC: UIViewController {
     
     
     // MARK: - Properties
-    let viewModel: CryptoViewModelProtocol
+    var viewModel: CryptoViewModelProtocol
     
     
     // MARK: - Initializer
@@ -57,11 +63,15 @@ class CryptoVC: UIViewController {
     func setupUI() {
         view.addSubview(bitcoinLabel)
         view.addSubview(ethereumLabel)
+        view.addSubview(toggleSwitch)
         
         NSLayoutConstraint.activate([
             bitcoinLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             bitcoinLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             bitcoinLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            
+            toggleSwitch.topAnchor.constraint(equalTo: bitcoinLabel.topAnchor),
+            toggleSwitch.leadingAnchor.constraint(equalTo: bitcoinLabel.trailingAnchor, constant: -56),
             
             ethereumLabel.topAnchor.constraint(equalTo: bitcoinLabel.bottomAnchor, constant: 25),
             ethereumLabel.leadingAnchor.constraint(equalTo: bitcoinLabel.leadingAnchor),
@@ -101,4 +111,10 @@ class CryptoVC: UIViewController {
         bitcoinLabel.text = "Failed to load Bitcoin price"
         ethereumLabel.text = "Failed to load Ethereum price"
     }
+    
+    @objc func switchChanged(_ sender: UISwitch){
+        let service : UsersNetworkManagerProtocol = sender.isOn ? UsersNetworkManager() : MockNetworkManager()
+        viewModel = CryptoViewModel(service: service)
+        loadCryptoData()
+        }
 }

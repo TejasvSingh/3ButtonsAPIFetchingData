@@ -8,4 +8,9 @@
 struct People: Decodable{
     let name: String?
     let username: String?
+    
+    enum CodingKeys: String, CodingKey{
+        case name = "name"
+        case username = "username"
+    }
 }

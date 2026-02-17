@@ -11,6 +11,12 @@ class UsersView: UIViewController, UITableViewDataSource {
     // MARK: - UI Components
     var userTableView: UITableView?
     var titleLabel: UILabel?
+    let toggleSwitch : UISwitch = {
+        let toggleSwitch = UISwitch()
+        toggleSwitch.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
+        toggleSwitch.translatesAutoresizingMaskIntoConstraints = false
+        return toggleSwitch
+    }()
     
     // MARK: - Properties
     var viewModel: UsersViewModelProtocol?
@@ -62,11 +68,15 @@ class UsersView: UIViewController, UITableViewDataSource {
         if let userTableView = userTableView, let titleLabel = titleLabel {
             view.addSubview(titleLabel)
             view.addSubview(userTableView)
+            view.addSubview(toggleSwitch)
             
             NSLayoutConstraint.activate([
                 titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
                 titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                 titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                
+                toggleSwitch.topAnchor.constraint(equalTo: titleLabel.topAnchor),
+                toggleSwitch.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: -56),
                 
                 userTableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
                 userTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -76,6 +86,15 @@ class UsersView: UIViewController, UITableViewDataSource {
         }
     }
     
+    @objc func switchChanged(_ sender: UISwitch){
+        let service : UsersNetworkManagerProtocol = sender.isOn ? UsersNetworkManager() : MockNetworkManager()
+        viewModel = UsersViewModel(service: service)
+        Task {
+            await viewModel?.getUsersDataFromServer()
+            print("data fetched successfully")
+            userTableView?.reloadData()
+        }
+    }
     
     // MARK: - TableView DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

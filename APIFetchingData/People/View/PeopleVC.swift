@@ -6,7 +6,12 @@ class PeopleVC: UIViewController, UITableViewDataSource {
     // MARK: - UI Components
     var peopleTableView: UITableView?
     var titleLabel: UILabel?
-    
+    let toggleSwitch : UISwitch = {
+        let toggleSwitch = UISwitch()
+        toggleSwitch.addTarget(self, action: #selector(switchChanged), for: .valueChanged)
+        toggleSwitch.translatesAutoresizingMaskIntoConstraints = false
+        return toggleSwitch
+    }()
     
     // MARK: - Properties
     var viewModel: PeopleViewModelProtocol?
@@ -59,11 +64,15 @@ class PeopleVC: UIViewController, UITableViewDataSource {
         if let peopleTableView = peopleTableView, let titleLabel = titleLabel {
             view.addSubview(titleLabel)
             view.addSubview(peopleTableView)
+            view.addSubview(toggleSwitch)
             
             NSLayoutConstraint.activate([
                 titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
                 titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                 titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                
+                toggleSwitch.topAnchor.constraint(equalTo: titleLabel.topAnchor),
+                toggleSwitch.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: -56),
                 
                 peopleTableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
                 peopleTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -71,8 +80,18 @@ class PeopleVC: UIViewController, UITableViewDataSource {
                 peopleTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             ])
         }
+       
     }
     
+    @objc func switchChanged(_ sender: UISwitch){
+        let service : UsersNetworkManagerProtocol = sender.isOn ? UsersNetworkManager() : MockNetworkManager()
+        viewModel = PeopleViewModel(service: service)
+        Task {
+            await viewModel?.getPeopleDataFromServer()
+            print("data fetched successfully")
+            peopleTableView?.reloadData()
+        }
+    }
     
     // MARK: - TableView DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
